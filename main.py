@@ -54,7 +54,7 @@ class Main(QtGui.QMainWindow):
 
 			pos = strTo.find("<")
 			strName = ""
-			if pos == 0:
+			if pos == -1:
 				pos = strTo.find("@")
 			strName = strTo[0:pos]
 
